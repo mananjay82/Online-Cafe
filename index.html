@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cafe: Home Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/coffee-cup.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body onload="myFunction()">
+    <div class="animate-bottom" id="mainContainer">
+        <section class="navbar">
+            <div class="leftNavbar">
+                <a class="menuLeft" href="index.html"><span style="background-color: white; padding: 8px; border-radius: 10px; opacity: 0.8;"><img src="Images/coffee-cup.png" alt="img" height="20px" width="20px"></span> ONLINE CAFE</a>
+            </div>
+            <div class="rightNavbar">
+                <a class="menuRight" href="index.html">Home</a>
+                <a class="menuRight" href="menu.html">Menu</a>
+                <a class="menuRight" href="#order">Order</a>
+                <!-- <a class="menuRight" href="about.html">About</a> -->
+                <a class="menuRight" href="#review">Reviews</a>
+            </div>
+            <span class="menuBtn" style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+            <div class="sideNav" id="mySideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="menuRightItem" href="index.html">Home</a>
+                <a class="menuRightItem" href="menu.html">Menu</a>
+                <a class="menuRightItem" href="#order">Order</a>
+                <!-- <a class="menuRightItem" href="about.html">About</a> -->
+                <a class="menuRightItem" href="#review">Reviews</a>
+            </div>
+        </section>
+        <div class="flexContainer">
+            <section class="homeImage"> 
+                <div class="homeImageContainer">
+                    <img src="Images/balcony_caf_chairs_contemporary_dining_empty_exterior_furniture-1528569.jpg!d" alt="Restaurant Image" class="homeImageContainerContent">
+                </div>
+            </section>
+            <section class="ourSpeciality">
+                <h1 class="heading">Our <span>Speciality</span></h1>
+                <div class="boxContainer">
+                    <div class="box">
+                        <img class="image" src="Images/s-img-1.jpg" alt="">
+                        <div class="content">
+                            <img src="Images/s-1.png" alt="">
+                            <h3>tasty burger</h3>
+                            <p>Reload cafe offer you tasty and fresh foods along with refreshing beverages. All the raw items are directly imported from the farms directly.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="image" src="Images/s-img-2.jpg" alt="">
+                        <div class="content">
+                            <img src="Images/s-2.png" alt="">
+                            <h3>tasty pizza</h3>
+                            <p>Reload cafe offer you tasty and fresh foods along with refreshing beverages. All the raw items are directly imported from the farms directly.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="image" src="Images/s-img-3.jpg" alt="">
+                        <div class="content">
+                            <img src="Images/s-3.png" alt="">
+                            <h3>cold ice-cream</h3>
+                            <p>Reload cafe offer you tasty and fresh foods along with refreshing beverages. All the raw items are directly imported from the farms directly.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="image" src="Images/s-img-4.jpg" alt="">
+                        <div class="content">
+                            <img src="Images/s-4.png" alt="">
+                            <h3>cold drinks</h3>
+                            <p>Reload cafe offer you tasty and fresh foods along with refreshing beverages. All the raw items are directly imported from the farms directly.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="image" src="Images/s-img-5.jpg" alt="">
+                        <div class="content">
+                            <img src="Images/s-5.png" alt="">
+                            <h3>tasty sweets</h3>
+                            <p>Reload cafe offer you tasty and fresh foods along with refreshing beverages. All the raw items are directly imported from the farms directly.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="image" src="Images/s-img-6.jpg" alt="">
+                        <div class="content">
+                            <img src="Images/s-6.png" alt="">
+                            <h3>healty breakfast</h3>
+                            <p>Reload cafe offer you tasty and fresh foods along with refreshing beverages. All the raw items are directly imported from the farms directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="howItWorks">
+                <h1 class="heading" style="color: white;">How it <span>Works</span></h1>
+                <div class="howItWorksContainer">
+                    <div class="box">
+                        <img src="Images/step-1.jpg" alt="">
+                        <h3>Choose Your Favourite Food</h3>
+                    </div>
+                    <div class="box">
+                        <img src="Images/step-2.jpg" alt="">
+                        <h3>Free And Fast Delivery</h3>
+                    </div>
+                    <div class="box">
+                        <img src="Images/step-3.jpg" alt="">
+                        <h3>Easy COD Payments</h3>
+                    </div>
+                    <div class="box">
+                        <img src="Images/step-4.jpg" alt="">
+                        <h3>Enjoy your Food</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="review" id="review">
+                <h2 class="heading">Our Customer <span>Reviews</span></h2>
+                <div class="reviewContainer">
+                    <div class="box">
+                        <img src="Images/pic1.png" alt="">
+                        <h3>Aditya Tiwari</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="Images/pic2.jpg" alt="">
+                        <h3>Mananjay Kumar</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>    
+                            <span class="fa fa-star checked"></span>    
+                            <span class="fa fa-star checked"></span>    
+                            <span class="fa fa-star checked"></span>    
+                            <span class="fa fa-star checked"></span>    
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="Images/pic-3.jpeg" alt="">
+                        <h3>Navita Sinha</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="order" id="order">
+                <h2 class="heading" style="color: white;">Order <span>Here</span></h2>
+                <div class="orderContainer">
+                    <div class="box">
+                        <img src="Images/order-img.jpg" alt="OrderImage">
+                    </div>
+                    <div class="box">
+                        <form action="/" method="POST" autocomplete="off">
+                            <div class="inputText">
+                                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="inputText">
+                                <input type="tel" name="number" id="number" placeholder="Enter Your Mobile Number" required>
+                                <input type="text" name="foodname" id="foodname" placeholder="Enter Food Name" required>
+                            </div>
+                            <textarea name="address" id="address" placeholder="Enter Your Address" cols="60" rows="10"></textarea><br>
+                            <input type="submit" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy; Online Cafe - All Rights Reserved!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+        <div class="loader" id="loader"></div>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
