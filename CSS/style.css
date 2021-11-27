@@ -325,9 +325,45 @@ body{
     padding: 10px;
 }
 .footer .copyright p{
+    font-size: 25px;
     font-weight: bold;
 }
 
+/* Menu Page */
+.menuContainer{
+    padding: 30px 50px 30px 50px;
+    margin: 120px 20px;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+
+.menuFlexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.2rem;
+    padding: 20px;
+}
+.menuItemBox{
+    flex: 1 1 300px;
+    text-align: center; 
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 20px;
+    margin: 20px 5px;
+}
+.menuItemBox img{
+    object-fit: cover;
+    height: 200px;
+    border-radius: 4%;
+}
+
+@media screen and (max-width: 375px) {
+    #menuLeft{
+        font-size: 20px;
+    }
+    
+}
 
 /* Media Queries */
 @media screen and (max-width: 878px) {

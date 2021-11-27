@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cafe: Order</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/coffee-cup.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: violet;
+            animation: glow 2s ease-in-out infinite alternate;
+
+
+            margin-top: 185px;
+            font-size: 64px;
+        }
+
+        p {
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: violet;
+            font-size: 54px;
+            animation: glitch 1s linear infinite;
+
+        }
+
+        @keyframes glitch {
+
+            2%,
+            64% {
+                transform: translate(2px, 0) skew(0deg);
+            }
+
+            4%,
+            60% {
+                transform: translate(-2px, 0) skew(0deg);
+            }
+
+            62% {
+                transform: translate(0, 0) skew(5deg);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px #ac288f;
+            }
+
+            to {
+                text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+            }
+        }
+
+        #mainContainer {
+            display: none;
+        }
+
+        #loader {
+            z-index: -1;
+            width: 120px;
+            height: 120px;
+            margin: 250px auto;
+            border: 10px solid #fff;
+            border-top: 10px solid black;
+            border-radius: 50%;
+            padding: 90px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader.fade-out {
+            display: none;
+        }
+
+        #mainContainer {
+            position: relative;
+            animation-name: animatebottom;
+            animation-duration: 3s;
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -50px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body onload="myFunction()">
+    <div id="mainContainer">
+        <h1 style="color: rgb(49, 46, 40);">Your order has been placed sucessfully.</h1>
+        <br>
+        <p style="color: white;">We will deliver your order in 30 mins !!!</p>
+    </div>
+    <div class="loader" id="loader"></div>
+    <script>
+        function myFunction() {
+            myvar = setTimeout(showpage, 3000);
+        }
+
+        function showpage() {
+            document.getElementById('loader').style.display = "none";
+            document.getElementById('mainContainer').style.display = "block";
+            document.body.style.backgroundImage = "url('images/order.jpg')";
+        }
+    </script>
+</body>
+
+</html>

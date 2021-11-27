@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cafe: Menu Page</title>
+    <link rel="icon" type="images/png" sizes="32x32" href="Images/coffee-cup.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body onload="myFunction()">
+    <div class="animate-bottom" id="mainContainer">
+        <section class="navbar">
+            <div class="leftNavbar">
+                <a class="menuLeft" href="index.html" id="menuLeft"><span
+                        style="background-color: white; padding: 8px; border-radius: 10px; opacity: 0.8;"><img
+                            src="Images/coffee-cup.png" alt="img" height="20px" width="20px"></span> ONLINE CAFE</a>
+            </div>
+            <div class="rightNavbar">
+                <a class="menuRight" href="index.html">Home</a>
+                <a class="menuRight" href="menu.html">Menu</a>
+                <a class="menuRight" href="#howItWorks">How It Works</a>
+                <a class="menuRight" href="#review">Reviews</a>
+                <a class="menuRight" href="#order">Order</a>
+            </div>
+            <span class="menuBtn" style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+            <div class="sideNav" id="mySideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="menuRightItem" href="index.html">Home</a>
+                <a class="menuRightItem" href="menu.html">Menu</a>
+                <a class="menuRightItem" href="#howItWorks">How It Works</a>
+                <a class="menuRightItem" href="#review">Reviews</a>
+                <a class="menuRightItem" href="#order">Order</a>
+            </div>
+        </section>
+        <section class="menuContainer">
+            <h2 class="heading">Menu <span>Categories</span></h2>
+            <div class="menuFlexContainer">
+                <div class="menuItemBox">
+                    <img src="Images/soup.jpg" alt="">
+                    <h1>Soup</h1>
+                </div>
+                <div class="menuItemBox">
+                    <img src="Images/vegnoodles.jpg" alt="">
+                    <h1>Veg Noodles</h1>
+                </div>
+                <div class="menuItemBox">
+                    <img src="Images/hakkanoodles.jpg" alt="">
+                    <h1>Veg Hakka Noodles</h1>
+                </div>
+                <div class="menuItemBox">
+                    <img src="Images/chickennoodles.webp" alt="">
+                    <h1>Chicken Noodles</h1>
+                </div>
+                <div class="menuItemBox">
+                    <img src="Images/soup.jpg" alt="">
+                    <h1>Soup</h1>
+                </div>
+                <div class="menuItemBox">
+                    <img src="Images/soup.jpg" alt="">
+                    <h1>Soup</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="loader" id="loader"></div>
+    <script src="Javascript/script.js"></script>
+
+</body>
+
+</html>
