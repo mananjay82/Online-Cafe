@@ -162,14 +162,25 @@
                         <img src="Images/order-img.jpg" alt="OrderImage">
                     </div>
                     <div class="box">
-                        <form action="order.html" method="POST" autocomplete="off">
+                        <form action="categoryresult.html" id="orderForm" method="post" autocomplete="off" onsubmit="return(categorySearch())">
                             <div class="inputText">
                                 <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
                                 <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
                             </div>
                             <div class="inputText">
                                 <input type="tel" name="number" id="number" placeholder="Enter Your Mobile Number" required>
-                                <input type="text" name="foodname" id="foodname" placeholder="Enter Food Name" required>
+                                <!-- <input type="text" name="foodname" id="foodname" placeholder="Enter Food Name" required> -->
+                                <select name="menuList" id="menuList" form="orderForm">
+                                    <option value="selectcategory">Select Category</option>
+                                    <option value="starters">Starters</option>
+                                    <option value="appetizers">Appetizers</option>
+                                    <option value="chinese">Chinese</option>
+                                    <option value="breads">Breads</option>
+                                    <option value="northindian">North Indian</option>
+                                    <option value="southindian">South Indian</option>
+                                    <option value="drinks">Drinks</option>
+                                    <option value="desserts">Desserts</option>
+                                </select>
                             </div>
                             <textarea name="address" id="address" placeholder="Enter Your Address" cols="60" rows="10"></textarea><br>
                             <input type="submit" class="btn">

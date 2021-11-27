@@ -357,6 +357,35 @@ body{
     height: 200px;
     border-radius: 4%;
 }
+.menuCategoriesBtn{
+    padding: 10px;
+    margin: 12px 0px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: font-size 0.4s;
+}
+.menuCategoriesBtn:hover{
+    font-size: 20px;
+
+}
+
+/* */
+#empty{
+    position:relative; 
+    padding:200px; 
+    text-align:center; 
+    font-size:30px; 
+    font-weight:bold; 
+}
+@media screen and (max-width:541px) {
+    #empty{
+        font-size: 10px;
+    }
+}
 
 @media screen and (max-width: 375px) {
     #menuLeft{
