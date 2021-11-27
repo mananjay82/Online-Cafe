@@ -276,7 +276,6 @@ body{
     margin: 20px 50px;
     border: none;
     outline: none;
-    border-radius: 6px;
     color: white;
     background-color: black;
 }
@@ -288,7 +287,6 @@ body{
     padding: 10px;
     background-color: black;
     border: none;
-    border-radius: 6px;
     outline: none;
     color: white;
     text-align: center;
@@ -357,6 +355,9 @@ body{
     height: 200px;
     border-radius: 4%;
 }
+.menuItemBox h1 span{
+    color: red;
+}
 .menuCategoriesBtn{
     padding: 10px;
     margin: 12px 0px;
@@ -373,7 +374,21 @@ body{
 
 }
 
-/* */
+select{
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+select:hover, select:active{
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+/*Empty Div */
 #empty{
     position:relative; 
     padding:200px; 
