@@ -20,16 +20,25 @@ function closeNav() {
 
 var categoryResult;
 function categorySearch() {
-    var categoryVal = document.getElementById('menuList').value;
-    if (categoryVal == 'selectcategory') {
-        alert('Please Select any Category');
+    var pattern = /^[6-9]\d{9}$/;
+    var res = pattern.test(document.getElementById('number').value);
+    if (res) {
+        var categoryVal = document.getElementById('menuList').value;
+        if (categoryVal == 'selectcategory') {
+            alert('Please Select any Category');
+            return false;
+        }
+        else {
+            sessionStorage.setItem(categoryResult, categoryVal);
+            alert(categoryVal + ": - Available");
+            return true;
+        }
+    }
+    else{
+        window.alert('Invalid Mobile Number');
         return false;
     }
-    else {
-        sessionStorage.setItem(categoryResult, categoryVal);
-        alert(categoryVal + ": - Available");
-        return true;
-    }
+
 }
 function menuListResult() {
     categoryResult = sessionStorage.getItem(categoryResult);
